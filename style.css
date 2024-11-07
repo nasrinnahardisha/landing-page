@@ -1,5 +1,4 @@
-
- :root {
+:root {
     --primary-color: #857878;
     --secondary-color: #9c4040;
     --background-color: #fff;
@@ -26,17 +25,17 @@ body {
 
 .header {
     background: var(--primary-color);
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     left: 0;
-    right: 0; 
-    width: 100%; 
+    right: 0;
+    width: 100%;
     z-index: 1000;
     margin-top: 20px;
 }
 
 body {
-    padding-top: 80px; 
+    padding-top: 80px;
 }
 
 
@@ -139,6 +138,7 @@ nav {
 .hero__container p {
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    line-height: 30px;
     color: var(--text-color);
     max-width: 60%;
     margin-left: auto;
@@ -155,6 +155,7 @@ nav {
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .hero__container h1 span {
@@ -191,11 +192,11 @@ nav {
         justify-content: space-between;
     }
 
-   
+
     .nav__menu__btn {
         display: none;
     }
-  
+
     .nav__links {
         padding: 0;
         width: unset;
@@ -206,13 +207,31 @@ nav {
         background: transparent;
         color: #fff;
     }
-  
+
 
     .nav__btn {
         display: flex;
     }
-   
-
-}  
 
 
+}
+
+@media (max-width : 580px) {
+
+    .hero__container {
+        padding-block: 8rem 10rem;
+        text-align: center;
+    }
+
+    .hero__container p {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+
+    .hero__container h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+}
